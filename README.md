@@ -7,7 +7,7 @@
 ## 
 ### Stage 0: Problem Definition & Data Ingestion
 • Problem: Classify news articles as fake (0) or real (1)
-• Data: Kaggle dataset with titles, source domains, retweet count, and labels [Kaggle Website](https://www.kaggle.com/datasets/algord/fake-news?resource=download)
+• Data: Kaggle dataset with titles, source domains, retweet count, and labels [Kaggle Data Link](https://www.kaggle.com/datasets/algord/fake-news?resource=download) (https://www.kaggle.com/datasets/algord/fake-news?resource=download)
 ### Stage 1: Data Preparation & Data Segregation
 • Data Prep: Clean title text (lowercase, remove punctuation, etc.)
 • Split: Train (70%), Validation (15%), Test (15%)
