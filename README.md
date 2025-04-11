@@ -28,9 +28,10 @@ Kaggle Data Link: (https://www.kaggle.com/datasets/algord/fake-news?resource=dow
    ```bash
    git clone https://github.com/ajudson23/NewsDetection.git
    cd NewsDetection
-
-2. Set up a virtual environment
-`python -m venv myenv
-source myenv/bin/activate  # On Windows, use: myenv\Scripts\activate`
-3. Install dependencies
-`pip install -r requirements.txt`
+2. **Set up a virtual environment**
+   ```bash
+   python -m venv myenv
+   source myenv/bin/activate
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
