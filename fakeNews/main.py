@@ -8,30 +8,39 @@ CS3820 Introduction to Artificial Intelligence
 2) Provide quantitative Metrics that can provide percentage of how much data is trustworthy
 '''
 
-import pandas as pd
+from ingest_data import load_data
 
-# Load the dataset
-file_path = 'FakeNewsNet.csv'  # Update if the filename is different
-df = pd.read_csv(file_path)
+# Stage 0: Ingest the dataset
+data_path = 'data/FakeNewsNet.csv'
+df = load_data(data_path)
 
-# Preview the data
-print("🔍 First 5 rows of the dataset:")
+# Preview to confirm it worked
 print(df.head())
 
-# Check the shape
-print(f"\n📏 Dataset shape: {df.shape}")
+# import pandas as pd
 
-# View column names
-print(f"\n🧾 Column names: {df.columns.tolist()}")
+# # Load the dataset
+# file_path = 'FakeNewsNet.csv'  # Update if the filename is different
+# df = pd.read_csv(file_path)
 
-# Check for missing values
-print("\n🧹 Missing values in each column:")
-print(df.isnull().sum())
+# # Preview the data
+# print("🔍 First 5 rows of the dataset:")
+# print(df.head())
 
-# Quick data type check
-print("\n🧠 Data types:")
-print(df.dtypes)
+# # Check the shape
+# print(f"\n📏 Dataset shape: {df.shape}")
 
-# Check label distribution
-print("\n📊 Class distribution (real = 1, fake = 0):")
-print(df['real'].value_counts())
+# # View column names
+# print(f"\n🧾 Column names: {df.columns.tolist()}")
+
+# # Check for missing values
+# print("\n🧹 Missing values in each column:")
+# print(df.isnull().sum())
+
+# # Quick data type check
+# print("\n🧠 Data types:")
+# print(df.dtypes)
+
+# # Check label distribution
+# print("\n📊 Class distribution (real = 1, fake = 0):")
+# print(df['real'].value_counts())
