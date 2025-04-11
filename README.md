@@ -24,10 +24,13 @@ Kaggle Data Link: (https://www.kaggle.com/datasets/algord/fake-news?resource=dow
 ##
 
 # How to Set Up the Project
-1. Clone this repository:
+1. Clone this repository
+
 `git clone https://github.com/ajudson23/NewsDetection.git`
-2. Set up a virtual environment:
+2. Set up a virtual environment
+
 `python -m venv myenv
 source myenv/bin/activate  # On Windows, use: myenv\Scripts\activate`
-3. Install dependencies:
+3. Install dependencies
+
 `pip install -r requirements.txt`
