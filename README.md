@@ -5,20 +5,20 @@
 2. Provide quantitative Metrics that can provide percentage of how much data is trustworthy
 
 ## 
-### Stage 0: Problem Definition & Data Ingestion
+### Stage 0: Problem Definition & Data Ingestion `ingest_data.py`
 • Problem: Classify news articles as fake (0) or real (1)
 
 • Data: Kaggle dataset with titles, source domains, retweet count, and labels 
 Kaggle Data Link: (https://www.kaggle.com/datasets/algord/fake-news?resource=download)
-### Stage 1: Data Preparation & Data Segregation
+### Stage 1: Data Preparation & Data Segregation `prepare_data.py`
 • Data Prep: Clean title text (lowercase, remove punctuation, etc.)
 
 • Split: Train (70%), Validation (15%), Test (15%)
-### Stage 2: Model Building
+### Stage 2: Model Building `build_model.py`
 • TF-IDF + Logistic Regression || Random Forest -- `CHOOSE`
-### Stage 3: Model Training and Tuning
+### Stage 3: Model Training and Tuning `train_model.py`
 • ...
-### Stage 4: Candidate Model(s) Testing/Evaluation
+### Stage 4: Candidate Model(s) Testing/Evaluation `evaluate_model.py`
 • Evaluation: Accuracy, Precision/Recall, F1 Score, Confusion Matrix
 ### Stage 5: Model Deployment & Performance Monitoring
 • Log user inputs and prediction confidence
