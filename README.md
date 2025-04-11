@@ -4,10 +4,10 @@
 1. Create a Natural Language Processing algorithm that is trained on real & fake news articles that can ingest outside news articles and can output real/fake predictions based on the news content.
 2. Provide quantitative Metrics that can provide percentage of how much data is trustworthy
 
-
+## 
 ### Stage 0: Problem Definition & Data Ingestion
 • Problem: Classify news articles as fake (0) or real (1)
-• Data: Kaggle dataset with titles, source domains, retweet count, and labels `https://www.kaggle.com/datasets/algord/fake-news?resource=download`
+• Data: Kaggle dataset with titles, source domains, retweet count, and labels [Kaggle Website](https://www.kaggle.com/datasets/algord/fake-news?resource=download)
 ### Stage 1: Data Preparation & Data Segregation
 • Data Prep: Clean title text (lowercase, remove punctuation, etc.)
 • Split: Train (70%), Validation (15%), Test (15%)
