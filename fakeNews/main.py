@@ -11,36 +11,10 @@ CS3820 Introduction to Artificial Intelligence
 from ingest_data import load_data
 
 # Stage 0: Ingest the dataset
-data_path = 'data/FakeNewsNet.csv'
-df = load_data(data_path)
+data_path = 'data/WELFake_Dataset.csv' 
+# data_path = 'data/FakeNewsNet.csv'  
+df = load_data(data_path)              # Loading Kaggle Dataset
 
 # Preview to confirm it worked
+print("\nmain.py:\n")
 print(df.head())
-
-# import pandas as pd
-
-# # Load the dataset
-# file_path = 'FakeNewsNet.csv'  # Update if the filename is different
-# df = pd.read_csv(file_path)
-
-# # Preview the data
-# print("🔍 First 5 rows of the dataset:")
-# print(df.head())
-
-# # Check the shape
-# print(f"\n📏 Dataset shape: {df.shape}")
-
-# # View column names
-# print(f"\n🧾 Column names: {df.columns.tolist()}")
-
-# # Check for missing values
-# print("\n🧹 Missing values in each column:")
-# print(df.isnull().sum())
-
-# # Quick data type check
-# print("\n🧠 Data types:")
-# print(df.dtypes)
-
-# # Check label distribution
-# print("\n📊 Class distribution (real = 1, fake = 0):")
-# print(df['real'].value_counts())
