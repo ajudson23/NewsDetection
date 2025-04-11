@@ -8,8 +8,8 @@
 ### Stage 0: Problem Definition & Data Ingestion -- `ingest_data.py`
 • Problem: Classify news articles as fake (0) or real (1)
 
-• Data: Kaggle dataset with titles, source domains, retweet count, and labels 
-Kaggle Data Link: (https://www.kaggle.com/datasets/algord/fake-news?resource=download)
+• Data: Kaggle dataset with titles, source domains, retweet count, and labels. 
+Kaggle Data Link: (https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification)
 ### Stage 1: Data Preparation & Data Segregation -- `prepare_data.py`
 • Data Prep: Clean title text (lowercase, remove punctuation, etc.)
 
