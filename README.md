@@ -12,6 +12,7 @@
 Kaggle Data Link: (https://www.kaggle.com/datasets/algord/fake-news?resource=download)
 ### Stage 1: Data Preparation & Data Segregation
 • Data Prep: Clean title text (lowercase, remove punctuation, etc.)
+
 • Split: Train (70%), Validation (15%), Test (15%)
 ### Stage 2: Model Building
 • TF-IDF + Logistic Regression || Random Forest -- `CHOOSE`
@@ -21,6 +22,7 @@ Kaggle Data Link: (https://www.kaggle.com/datasets/algord/fake-news?resource=dow
 • Evaluation: Accuracy, Precision/Recall, F1 Score, Confusion Matrix
 ### Stage 5: Model Deployment & Performance Monitoring
 • Log user inputs and prediction confidence
+
 • Periodically retrain with new labeled examples (manual for now)
 ##
 
