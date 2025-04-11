@@ -30,8 +30,8 @@ Kaggle Data Link: (https://www.kaggle.com/datasets/algord/fake-news?resource=dow
    cd NewsDetection
 2. **Set up a virtual environment**
    ```bash
-   python -m venv myenv
-   source myenv/bin/activate
+   python3 -m venv venv
+   source venv/bin/activate
 3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
