@@ -15,7 +15,9 @@ Kaggle Data Link: (https://www.kaggle.com/datasets/saurabhshahane/fake-news-clas
 
 • Split: Train (70%), Validation (15%), Test (15%)
 ### Stage 2: Model Building -- `build_model.py`
-• TF-IDF + Logistic Regression || Random Forest -- `CHOOSE`
+• TF-IDF: takes the cleaned text & converts into sparse matrix of numerical features based on word frequency & unqiueness
+
+• Logistic Regression: Classification algorithm to learn & predict 0/1 based on the TF-IDF vectors
 ### Stage 3: Model Training and Tuning -- `train_model.py`
 • ...
 ### Stage 4: Candidate Model(s) Testing/Evaluation -- `evaluate_model.py`
