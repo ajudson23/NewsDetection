@@ -11,6 +11,8 @@ CS3820 Introduction to Artificial Intelligence
 from ingest_data import load_data
 from prepare_data import split_clean_data
 from build_model import build_pipeline
+from train_model import train_and_evaluate
+from evaluate_model import evaluate_on_test_data
 
 # Stage 0: Ingest the dataset
 print("\n********************** STAGE 0 **********************\n")
@@ -27,5 +29,10 @@ print("\n********************** STAGE 2 **********************\n")
 model = build_pipeline()
 print(model)
 
-# Stage 3:
+# Stage 3: Train & Evaluate
 print("\n********************** STAGE 3 **********************\n")
+train_and_evaluate(model, train_df, val_df)
+
+# Stage 4: Testing on test data
+print("\n********************** STAGE 4 **********************\n")
+evaluate_on_test_data(model, test_df)
