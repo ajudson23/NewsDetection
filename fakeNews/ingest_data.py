@@ -14,7 +14,8 @@ def load_data(filepath):
     # Clean:
     if 'Unnamed: 0' in df.columns or 'index' in df.columns:     # drop index column if it exists
         df = df.drop(columns=[col for col in ['Unnamed: 0', 'index'] if col in df.columns])
-    df = df.dropna(subset=['title'])    # Drop rows where title is missing
+    df = df.dropna(subset=['title'])                            # Drop rows where title is missing
+    df = df.dropna(subset=['text', 'label'])                   # Drop rows with missing text or label
 
     print_dataset(df)
     return df
