@@ -9,12 +9,17 @@ CS3820 Introduction to Artificial Intelligence
 '''
 
 from ingest_data import load_data
+from prepare_data import split_clean_data
 
 # Stage 0: Ingest the dataset
+print("\n********************** STAGE 0 **********************\n")
 data_path = 'data/WELFake_Dataset.csv' 
-# data_path = 'data/FakeNewsNet.csv'  
 df = load_data(data_path)              # Loading Kaggle Dataset
 
-# Preview to confirm it worked
-print("\nmain.py:\n")
+# Stage 1: Clean & Split
+print("\n********************** STAGE 1 **********************\n")
+train_df, val_df, test_df = split_clean_data(df)
 print(df.head())
+
+# Stage 2: 
+print("\n********************** STAGE 2 **********************\n")
