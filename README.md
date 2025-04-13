@@ -32,12 +32,11 @@ Kaggle Data Link: (https://www.kaggle.com/datasets/saurabhshahane/fake-news-clas
 1. **Clone this repository**
    ```bash
    git clone https://github.com/ajudson23/NewsDetection.git
-   ```bash
    cd NewsDetection
+
 2. **Set up a virtual environment**
    ```bash
    python3 -m venv venv
-   ```bash
    source venv/bin/activate
 3. **Install dependencies**
    ```bash
@@ -45,5 +44,4 @@ Kaggle Data Link: (https://www.kaggle.com/datasets/saurabhshahane/fake-news-clas
 4. **Run script**
    ```bash
    cd fakeNews
-   ```bash
    python main.py
