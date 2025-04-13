@@ -11,11 +11,11 @@ def load_data(filepath):
     ''' Capture the data frame from CSV file '''
     df = pd.read_csv(filepath)
 
-    # Clean:
-    if 'Unnamed: 0' in df.columns or 'index' in df.columns:     # drop index column if it exists
-        df = df.drop(columns=[col for col in ['Unnamed: 0', 'index'] if col in df.columns])
-    df = df.dropna(subset=['title'])                            # Drop rows where title is missing
-    df = df.dropna(subset=['text', 'label'])                   # Drop rows with missing text or label
+    # clean:
+    if 'Unnamed: 0' in df.columns:                  # drop index column if it exists
+        df = df.drop(columns=[col for col in ['Unnamed: 0'] if col in df.columns])
+    df = df.dropna(subset=['title'])                # drop rows where title is missing
+    df = df.dropna(subset=['text', 'label'])        # drop rows with missing text or label
 
     print_dataset(df)
     return df
@@ -24,25 +24,23 @@ def load_data(filepath):
 def print_dataset(df):
     '''Print details from the DataFrame'''
     print("First 5 rows of the dataset:")
-    print(df.head())
+    print(df.head())                                # print 1st 5 entries
 
-    print(f"\nDataset shape: {df.shape}")
-    print(f"\nColumn names: {df.columns.tolist()}")
+    print(f"\nDataset shape: {df.shape}")           # prints (# of articles rows, # coln)
+    print(f"\nColumn names: {df.columns.tolist()}") # coln names: ['title', 'text', 'label']
 
     print("\nMissing values in each column:")
-    print(df.isnull().sum())
+    print(df.isnull().sum())                        # get sum of missing csv elements
 
     print("\nData types:")
-    print(df.dtypes)
+    print(df.dtypes)                                # data types: objects & int64
 
-    # Dynamically detect the label column
-    if 'real' in df.columns:
-        label_column = 'real'
-    elif 'label' in df.columns:
+    # dynamically detect the label (0fake/1real) column
+    if 'label' in df.columns:
         label_column = 'label'
     else:
-        print("\n⚠️ No known label column ('real' or 'label') found.")
+        print("\nNo known label column ('real' or 'label') found.")
         return
 
-    print(f"\nClass distribution ({label_column}):")
-    print(df[label_column].value_counts())
+    print(f"\nClass distribution ({label_column}):")    
+    print(df[label_column].value_counts())          # display # of real & fake entries 
