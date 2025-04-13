@@ -3,6 +3,7 @@ Using the model pipeline, script will distingusishing fake & real news.
 '''
 
 from sklearn.metrics import accuracy_score, classification_report
+import matplotlib.pyplot as plt
 
 
 def train_and_evaluate(model, train_df, val_df):
