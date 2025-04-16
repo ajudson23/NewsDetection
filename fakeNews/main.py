@@ -16,7 +16,7 @@ from evaluate_model import evaluate_on_test_data
 
 # Stage 0: Ingest the dataset
 print("\n********************** STAGE 0 **********************\n")
-data_path = 'data/WELFake_Dataset.csv' 
+data_path = 'data/WELFake_Dataset2.csv' 
 df = load_data(data_path)              # Loading Kaggle Dataset
 
 # Stage 1: Clean & Split
