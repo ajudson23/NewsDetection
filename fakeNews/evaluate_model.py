@@ -1,6 +1,9 @@
 ''' Stage 4: Final Model Evaluation
 
 Testing model on unseen data to evaluate how the model performs
+
+Ref:
+  https://scikit-learn.org/stable/modules/model_evaluation.html
 '''
 
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix

@@ -1,5 +1,8 @@
 ''' Stage 3: Training & Hyperparameter Tuning
 Using the model pipeline, script will distingusishing fake & real news.
+
+Ref:
+  https://scikit-learn.org/stable/modules/model_evaluation.html
 '''
 
 from sklearn.metrics import accuracy_score, classification_report

@@ -6,6 +6,11 @@ articles using 'model.predict()'.
 
  * TF-IDF: converting text into numeric values
  * Logigistic Regression model: for classifying news as real or fake
+
+Ref:
+  https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
+  https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+  https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html
 '''
 
 from sklearn.feature_extraction.text import TfidfVectorizer

@@ -1,7 +1,9 @@
 ''' Stage 0: Data Ingestion
 
 Will be reading from Kaggles: FakeNewsNet.csv 
-Ref: https://www.kaggle.com/datasets/algord/fake-news
+
+Ref: 
+  https://www.kaggle.com/datasets/algord/fake-news
 '''
 
 import pandas as pd
