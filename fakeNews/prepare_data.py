@@ -10,9 +10,9 @@ This file contains functions that will be cleaning and splitting the data.
    split the data into training (70%), validation (15%), & Testing (15%)
 '''
 
-import pandas as pd
 from sklearn.model_selection import train_test_split
 import re
+
 
 def clean_text(text):
     ''' Cleaning text: applying lowercase; remove URLs; remove punctuation, numbers, & extra whitespace'''
@@ -22,14 +22,16 @@ def clean_text(text):
     text = re.sub(r'\s+', ' ', text).strip()      
     return text
 
+
 def split_clean_data(df):
     ''' Split & clean data '''
-    # Clean data in text coln
+    # create new coln of cleaned text using text
     df['cleaned_text'] = df['text'].apply(clean_text)
 
-    # Split data as train (70%), validate (15%), & Test (15%)
-    train, temp = train_test_split(df, test_size=0.3, stratify=df['label'], random_state=42)
-    val, test = train_test_split(temp, test_size=0.5, stratify=temp['label'], random_state=42)
+    # Split data as train (70%), validate (15%), & test (15%)
+    # stratify ensures an equal distribution of (fake/real) articles
+    train, temp = train_test_split(df, test_size=0.3, stratify=df['label'], random_state=42)        # splits df into 70% test & 30% leftover (temp)
+    validate, test = train_test_split(temp, test_size=0.5, stratify=temp['label'], random_state=42) # takes temp and divdes 50/50 for validate & test
 
-    print(f"Train size: {len(train)}, Val size: {len(val)}, Test size: {len(test)}")
-    return train, val, test
+    print(f"Train size: {len(train)}, validate size: {len(validate)}, Test size: {len(test)}")
+    return train, validate, test

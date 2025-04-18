@@ -13,6 +13,9 @@ myenv/
 myvenv/
 venv/
 
+fakeNews/data/*.csv
+
+
 # Distribution / packaging
 .Python
 build/
