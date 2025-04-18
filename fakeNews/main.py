@@ -7,9 +7,9 @@ CS3820 Introduction to Artificial Intelligence
    that can ingest outside news articles and can output real/fake predictions based on the news content.
 2) Provide quantitative Metrics that can provide percentage of how much data is trustworthy
 '''
-
+import pandas as pd
 from ingest_data import load_data
-from prepare_data import split_clean_data
+from prepare_data import split_clean_data, clean_text
 from build_model import build_pipeline
 from train_model import train_and_evaluate
 from evaluate_model import evaluate_on_test_data
