@@ -8,6 +8,9 @@ This file contains functions that will be cleaning and splitting the data.
 
  * To split the data the program will be working with, a function will need to 
    split the data into training (70%), validation (15%), & Testing (15%)
+
+Ref:
+  https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
 '''
 
 from sklearn.model_selection import train_test_split
