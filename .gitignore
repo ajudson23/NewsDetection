@@ -13,6 +13,9 @@ myenv/
 myvenv/
 venv/
 
+/fakeNews/data/WELFake_Dataset2.csv
+
+
 # Distribution / packaging
 .Python
 build/
