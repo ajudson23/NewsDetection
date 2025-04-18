@@ -13,7 +13,7 @@ myenv/
 myvenv/
 venv/
 
-/fakeNews/data/WELFake_Dataset2.csv
+fakeNews/data/*.csv
 
 
 # Distribution / packaging
