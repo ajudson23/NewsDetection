@@ -19,13 +19,10 @@ Kaggle Data Link: (https://www.kaggle.com/datasets/saurabhshahane/fake-news-clas
 
 • Logistic Regression: Classification algorithm to learn & predict 0/1 based on the TF-IDF vectors
 ### Stage 3: Model Training and Tuning -- `train_model.py`
-• ...
+• Train the model using train and validate data from the segregated dataframe
 ### Stage 4: Candidate Model(s) Testing/Evaluation -- `evaluate_model.py`
 • Evaluation: Accuracy, Precision/Recall, F1 Score, Confusion Matrix
-### Stage 5: Model Deployment & Performance Monitoring
-• Log user inputs and prediction confidence
 
-• Periodically retrain with new labeled examples (manual for now)
 ##
 
 # How to Set Up the Project
@@ -42,12 +39,13 @@ Kaggle Data Link: (https://www.kaggle.com/datasets/saurabhshahane/fake-news-clas
    ```bash
    pip install -r requirements.txt
 4. **Get Database or CSV file**
-   Download this db from Kaggle (https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification)
+   
+   Download this db from Kaggle (https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification). Copy the Kaggle csv file into /fakeNews/data/. You'll have to create a data folder, follow these steps:
    ```bash
    cd fakeNews/
    mkdir data
    cd data/
-   Copy the Kaggle csv file into /fakeNews/data/
+   
 5. **Run script**
    ```bash
    cd fakeNews
