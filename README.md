@@ -41,7 +41,14 @@ Kaggle Data Link: (https://www.kaggle.com/datasets/saurabhshahane/fake-news-clas
 3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
-4. **Run script**
+4. **Get Database or CSV file**
+   Download this db from Kaggle (https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification)
+   ```bash
+   cd fakeNews/
+   mkdir data
+   cd data/
+   Copy the Kaggle csv file into /fakeNews/data/
+5. **Run script**
    ```bash
    cd fakeNews
    python main.py
